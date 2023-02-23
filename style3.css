@@ -1,0 +1,16 @@
+/* .container {
+  display: grid;
+  height: 600px;
+  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(2, 100px);
+  justify-content: space-between;
+  align-content: space-between;
+} */
+
+/* auto fit without media queries */
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
